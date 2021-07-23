@@ -14,10 +14,10 @@ def replace_word
 	puts "Enter the new word by which to be replaced"
 	new_word = gets.chomp
 	new_sent = sent.gsub!(old_word,new_word)
-	if (new_sent != nil)
-		puts "The required senetence after replacement is  #{new_sent}"
-	else
+	if (new_sent.nil?)
 		puts "The old word not found"
+	else
+		puts "The required senetence after replacement is  #{new_sent}"
 	end	
 end 
 
