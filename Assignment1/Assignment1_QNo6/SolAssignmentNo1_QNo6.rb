@@ -8,8 +8,8 @@ def replace_word
 	begin
 		puts "Enter the sentence"
 		sent = gets.chomp
-  end until (sent != nil)
-  puts "Enter the old word to be replaced"
+        end until (sent != nil)
+        puts "Enter the old word to be replaced"
 	old_word = gets.chomp
 	puts "Enter the new word by which to be replaced"
 	new_word = gets.chomp
