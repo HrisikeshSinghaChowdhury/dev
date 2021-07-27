@@ -27,6 +27,7 @@ end
 class RectangleInterfaceSkeleton
   def self.call_rectangle_ops
     res = "y"
+
     while (res == "y") do
       # => Create object as required of the above Rectangle class
       puts "--------------"
@@ -41,6 +42,7 @@ class RectangleInterfaceSkeleton
       puts "Press y/n to continue/exit"
       res = gets.chomp
     end
+
   end
 end
 

@@ -19,6 +19,7 @@ end
 class UserInterfaceSkeleton
   def self.user_access_interface
     res = "y"
+
     while (res == "y") do
         # => Create object of the above class
         puts "Creating object...."
@@ -27,6 +28,7 @@ class UserInterfaceSkeleton
         puts "Press y/n to continue/exit"
         res = gets.chomp
     end
+
   end
 end
 
