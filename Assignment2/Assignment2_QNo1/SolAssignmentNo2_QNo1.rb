@@ -12,15 +12,12 @@ class UserMainSkeleton
   # => Define the class method
   def self.fn_cnt_object
     @@cnt_object
-  end
-
+ end
 end
 
 # => Define user interface class
 class UserInterfaceSkeleton
-
   def self.user_access_interface
-
     res = "y"
     while (res == "y") do
         # => Create object of the above class
@@ -31,7 +28,6 @@ class UserInterfaceSkeleton
         res = gets.chomp
     end
   end
-
 end
 
 # => Call the user interface method

@@ -8,7 +8,6 @@ class RectangleSkeleton
 
   # => defining fn to initialize instance variables
   def initialize(len, br)
-
     self.len = len
     self.br = br
   end
@@ -22,14 +21,11 @@ class RectangleSkeleton
   def get_perimeter
     2 * (len + br)
   end
-
 end
 
 # => Define user interface class
 class RectangleInterfaceSkeleton
-
   def self.call_rectangle_ops
-
     res = "y"
     while (res == "y") do
       # => Create object as required of the above Rectangle class
@@ -45,7 +41,6 @@ class RectangleInterfaceSkeleton
       puts "Press y/n to continue/exit"
       res = gets.chomp
     end
-
   end
 end
 
