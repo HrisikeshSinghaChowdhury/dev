@@ -4,7 +4,6 @@
 
 # => Fn to implement buisness logic
 def merge_string
-
   puts "Enter first string"
   fname= gets.chomp
   puts "Enter second string"
