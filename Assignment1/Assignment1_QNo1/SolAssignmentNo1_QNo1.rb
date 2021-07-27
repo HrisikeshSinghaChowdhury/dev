@@ -15,4 +15,6 @@ def cvt_str_to_int
 end 
 
 # => self denotes main object which is an Instance of class Object
-self.cvt_str_to_int
+self.cvt_str_to_in
+
+
