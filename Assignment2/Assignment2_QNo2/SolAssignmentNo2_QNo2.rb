@@ -42,7 +42,6 @@ class RectangleInterfaceSkeleton
       puts "Press y/n to continue/exit"
       res = gets.chomp
     end
-
   end
 end
 
