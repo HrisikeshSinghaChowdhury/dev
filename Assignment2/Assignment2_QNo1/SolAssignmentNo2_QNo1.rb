@@ -21,18 +21,19 @@ class UserInterfaceSkeleton
     res = "y"
 
     while (res == "y") do
-        # => Create object of the above class
-        puts "Creating object...."
-        obj = UserMainSkeleton.new
-        puts "Object count of the class is = #{UserMainSkeleton.fn_cnt_object}"
-        puts "Press y/n to continue/exit"
-        res = gets.chomp
+      # => Create object of the above class
+      puts "Creating object...."
+      obj = UserMainSkeleton.new
+      puts "Object count of the class is = #{UserMainSkeleton.fn_cnt_object}"
+      puts "Press y/n to continue/exit"
+      res = gets.chomp
     end
   end
 end
 
 # => Call the user interface method
 UserInterfaceSkeleton.user_access_interface
+
 
 
 
