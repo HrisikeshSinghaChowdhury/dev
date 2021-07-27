@@ -1,7 +1,6 @@
 # => 5. Write a program to add new key value to an existing hash
 
 def hash_add_op
-
   # => create an empty hash
   var_hash = Hash[]
   # => Enter the elements into hash
