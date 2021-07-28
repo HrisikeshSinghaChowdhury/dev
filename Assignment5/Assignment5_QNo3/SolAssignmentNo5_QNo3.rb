@@ -7,16 +7,9 @@ require_relative 'module_instance_method.rb'
 
 class ClassModuleInterface
   # => include both modules
-  include ModuleDemoInstanceMethod
-
+  extend ModuleDemoInstanceMethod
   # => call the instance_method_behave
-  def call_instance_method
-    puts "The addition from Module Add is = "
-    method_instance_behave
-  end
+  method_instance_behave
 end
-
-#call the instance method
-ClassModuleInterface.new.call_instance_method
 
 

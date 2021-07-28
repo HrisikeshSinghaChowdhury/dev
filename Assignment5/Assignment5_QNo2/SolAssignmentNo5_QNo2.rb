@@ -8,14 +8,12 @@ require_relative 'module_class_method.rb'
 class ClassModuleInterface
   # => extend module to migrate to class method
   include ModuleDemoClassMethod
-
-  def self.call_class_method
-    puts "The addition from Module Add is = "
-    ModuleDemoClassMethod.behave_class_method
-  end
+  ModuleDemoClassMethod.behave_class_method
 end
 
-#call the class method
-ClassModuleInterface.call_class_method
+
+
+
+
 
 
