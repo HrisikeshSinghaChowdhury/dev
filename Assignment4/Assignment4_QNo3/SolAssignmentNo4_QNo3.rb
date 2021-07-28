@@ -2,36 +2,40 @@
 # => separate hash and return an array of hashes.
 # => eg: Input: {:a => 1, :b => 2, :c => 3}
 # => Output: [{:a => 1}, {:b => 2}, {:c => 3}]
+class CustomClass
+  def get_hash_op
+    # => create an empty hash
+    var_hash = Hash[]
+    # => Enter the elements into hash
+    res = "y"
 
-def hash_individual_op
-  # => create an empty hash
-  var_hash = Hash[]
-  # => Enter the elements into hash
-  res = "y"
+    while (res == "y") do
+      # => input hash key as string
+      puts "Enter the hash key"
+      h_key = gets.chomp
+      # => input hash value as integer
+      puts "Enter the hash value"
+      h_value = gets.chomp.to_i
+      # => inserting into the hash
+      var_hash.store(h_key,h_value)
+      puts "------------------"
+      puts "Enter y/n to continue/exit"
+      res = gets.chomp
+    end
 
-  while (res == "y") do
-    # => input hash key as string
-    puts "Enter the hash key"
-    h_key = gets.chomp
-    # => input hash value as integer
-    puts "Enter the hash value"
-    h_value = gets.chomp.to_i
-    # => inserting into the hash
-    var_hash.store(h_key,h_value)
-    puts "------------------"
-    puts "Enter y/n to continue/exit"
-    res = gets.chomp
+    # => print original hash
+    puts "Before modification of Hash #{var_hash.to_hash}"
+    arr = Array.new(var_hash.to_a)
+    # => after modification of hash and storing them in array
+    puts "After modification of Hash and storing into array #{Hash[arr].flatten}"
   end
-
-  # => print original hash
-  puts "Before modification of Hash   #{var_hash.to_hash}"
-  arr = Array.new(var_hash.to_a)
-  # => after modification of hash and storing them in array
-  puts "After modification of Hash and storing into array  #{ Hash[arr].flatten }"
 end
 
-# => calling the above hash normal method
-self.hash_individual_op
+# => call the instance method
+CustomClass.new.get_hash_op
+
+
+
 
 
 
