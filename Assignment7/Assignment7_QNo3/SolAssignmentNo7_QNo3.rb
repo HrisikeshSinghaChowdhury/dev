@@ -10,13 +10,11 @@ class ClassDemo
 
     # => way the proc is created
     full_name = Proc.new { |fname, lname| puts "Proc called :#{fname} #{lname}" }
-
     # => call the proc
     full_name.call(fname, lname)
 
     # => way the lambda is created
     full_name = -> (fname, lname) { puts "Lambda called : #{fname} #{lname}" }
-
     # => call the lambda
     full_name.call(fname, lname)
   end
@@ -31,7 +29,6 @@ class ClassDemo
 
     # => way the proc return from current context
     full_name = Proc.new { |fname, lname| puts "Not bothered about arguments" }
-
     # => call the proc
     full_name.call
 
