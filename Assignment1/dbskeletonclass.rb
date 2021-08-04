@@ -35,6 +35,7 @@ class DBSkeletonClass
         result.each do |row|
           return row.values_at('id')
         end
+      
         if (result.length.zero?)
           puts "Sorry No data against this user available.Sign up first"
           Kernel.exit(0)
