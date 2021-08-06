@@ -1,0 +1,57 @@
+body {
+  background-color: firebrick;
+}
+
+td {
+  border-style: ridge;
+  border-color: black;
+  border-width: 3px;
+}
+
+#label {
+  font-size: 10px;
+  background-color: rgb(100,100,200);
+  font-weight: 10px;
+  width: 200px;
+}
+
+#percent {
+  background-color: lightgrey;
+  max-width: inherit;
+  font-size: inherit;
+  width: 210px;
+}
+
+#menu-tabular {
+  margin-left: 130;
+  margin-right: 500;
+  margin-top:  100;
+  border-style: dashed;
+  border-width: 40px;
+  border-color: burlywood;
+  table-layout: fixed;
+  width: 80%;
+  background-color: rgb(100, 200, 300);
+}
+
+#restaurant-calculator {
+  background-color: lightyellow ;
+  height: 280px;
+  margin-top: 60px;
+
+}
+
+#message {
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: ivory;
+  margin-left: 76px;
+  padding-top: 10px;
+}
+
+.submit-cal {
+  background-color: blanchedalmond;
+  display: inline-block;
+  font-size: :90px;
+  margin-left: 380px;
+}
