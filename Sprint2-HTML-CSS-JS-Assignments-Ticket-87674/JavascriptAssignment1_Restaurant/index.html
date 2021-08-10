@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>QI Restaurant Tip Calculator</title>
+  </head>
+
+  <body>
+    <form id="restaurant-calculator" autocomplete="on" novalidate="novalidate">
+      <table id="menu-tabular">
+
+        <th colspan="2">MENU</th>
+        <tr>
+          <td><label>Enter the Bill Amount</label></td>
+          <td><input type="text" id="bill"></td>
+        </tr>
+
+        <tr>
+          <td><label>Enter the Tax Amount</label></td>
+          <td><input type="text" id="tax"></td>
+        </tr>
+
+        <tr>
+          <td><label>Enter the percent of Amount</label></td>
+          <td>
+             <select id="percent">
+               <option>5</option>
+               <option>10</option>
+               <option>15</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr rowspan="2">
+          <td height="30px"><label>Total tip is
+          <td><input type="text" id="result" contenteditable="off"></td>
+        </tr>
+      </table>
+      <input type="button" id="submit_cal" class="submit-cal" value="Calculate">
+      <span id="message">Thank you for your Visit!! </span>
+    </form>
+  </body>
+
+  <script type="text/javascript" src="script.js"></script>
+</html>
+
