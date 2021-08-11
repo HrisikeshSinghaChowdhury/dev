@@ -1,8 +1,8 @@
-# => 2: Write a program to exchange key and value and generate a new hash
-# => eg: Input: { a: 'e', b: 'm', c: nil, d: 'q' }
-# => Output: { e: 'a', m: 'b', q: 'd' }
+# => 4. Write a program to convert
+# => { a: 'e', b: 'm', c: nil, d: 'q' } to
+# => [[:a, "e"], [:b, "m"], [:c, nil], [:d, "q"]]
 class CustomClass
-  def hash_exchange_op
+  def get_hash_op
     # => create an empty hash
     var_hash = {}
     # => Enter the elements into hash
@@ -14,7 +14,7 @@ class CustomClass
       h_key = gets.chomp
       # => input hash value as integer
       puts "Enter the hash value"
-      h_value = gets.chomp.to_i
+      h_value = gets.chomp
       # => inserting into the hash
       var_hash.store(h_key, h_value)
       puts "------------------"
@@ -22,17 +22,19 @@ class CustomClass
       res = gets.chomp
     end
 
-    var_output_hash = Hash.new(var_hash.size)
     # => print original hash
     puts "Before modification of Hash #{var_hash.to_h}"
-
-    var_hash.each_pair do |k, v|
-      var_output_hash.store(v, k)
-    end
-    # => after modification of hash
-    puts "After modification of Hash #{var_output_hash.to_h}"
+    # => after modification of hash and storing them in array
+    puts "After modification of Hash and storing into array #{var_hash.to_a}"
   end
 end
 
 # => call the instance method
-CustomClass.new.hash_exchange_op
+CustomClass.new.get_hash_op
+
+
+
+
+
+
+
