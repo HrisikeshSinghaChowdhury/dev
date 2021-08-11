@@ -21,3 +21,4 @@ CustomClass.new.merge_string
 
 
 
+

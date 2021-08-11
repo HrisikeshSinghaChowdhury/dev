@@ -6,7 +6,7 @@ class CustomClass
   # => Fn to implement buisness logic
   def merge_input_string(fname, lname)
     # Merging names with a space in between
-    "#{fname} #{lname}"
+    full_name = "#{fname} #{lname}"
   end
 
   # => Fn to implement validation checking
@@ -16,13 +16,13 @@ class CustomClass
     fname = gets.chomp
     puts "Enter second name"
     lname = gets.chomp
-    ret_full_name = merge_input_string(fname, lname)
-    puts "#{ret_full_name}"
+    puts "#{merge_input_string(fname, lname)}"
   end
 end
 
 # => create instance and call method
 CustomClass.new.input_string
+
 
 
 
