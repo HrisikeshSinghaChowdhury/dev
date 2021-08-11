@@ -3,7 +3,7 @@
 class ClassDemo
   def lambda_operation
     # => define lambda
-    full_name = -> (fname, lname) { puts "#{fname} #{lname}" }
+    full_name = -> (fname, lname) { "#{fname} #{lname}" }
     # => input two names
     puts "Enter the first name"
     fname = gets.chomp
