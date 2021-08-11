@@ -17,7 +17,7 @@ class CustomClass
        puts "Enter the hash value"
        h_value = gets.chomp.to_i
        # => inserting into the hash
-       var_hash.store(h_key,h_value)
+       var_hash.store(h_key, h_value)
        puts "------------------"
        puts "Enter y/n to continue/exit"
        res = gets.chomp
