@@ -1,4 +1,4 @@
-# => 3. Write a program to describe two difference between proc and lambda.
+# => 3. Write a program to describe three difference between proc and lambda.
 class ClassDemo
   # => method to demonstrate the first difference between lambda and proc
   def demo_first_diff
@@ -43,15 +43,25 @@ class ClassDemo
       puts "Number of arguments mismatch in lambda.#{e}"
     end
   end
+
+  # => method to demonstrate the third difference between lambda and proc
+  def demo_third_diff
+    # => return statement in proc terminates from the method
+    ret = Proc.new { return "hello inside proc.line returns" }
+    puts "#{ret}"
+
+    # => following codes gets skipped
+    ret = -> () { puts "hello.Should print but the function terminates due to proc"};
+    puts "#{ret.call}"
+  end
 end
 
 class CustomClass
   def custom_method_call
     ClassDemo.new.demo_first_diff
     ClassDemo.new.demo_second_diff
+    ClassDemo.new.demo_third_diff
   end
 end
 
 CustomClass.new.custom_method_call
-
-
