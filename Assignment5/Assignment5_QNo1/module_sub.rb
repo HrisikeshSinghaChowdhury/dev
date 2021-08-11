@@ -3,7 +3,7 @@
 # => a method in a class and use those module methods inside that.
 module ModuleSub
   # => define common method
-  def self.common_method
+  def common_method
     puts "The subtraction of two numbers 9 - 5 = 4"
   end
 end

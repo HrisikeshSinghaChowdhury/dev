@@ -7,9 +7,10 @@ require_relative 'module_class_method.rb'
 
 class ClassModuleInterface
   # => extend module to migrate to class method
-  include ModuleDemoClassMethod
+  extend ModuleDemoClassMethod
   ModuleDemoClassMethod.behave_class_method
 end
+
 
 
 

@@ -9,4 +9,3 @@ module ModuleDemoClassMethod
   end
 end
 
-

@@ -6,10 +6,13 @@
 require_relative 'module_instance_method.rb'
 
 class ClassModuleInterface
-  # => include both modules
-  extend ModuleDemoInstanceMethod
-  # => call the instance_method_behave
-  method_instance_behave
+  # => include modules
+  include ModuleDemoInstanceMethod
 end
+
+# => call the instance_method_behave
+ClassModuleInterface.new.method_instance_behave
+
+
 
 

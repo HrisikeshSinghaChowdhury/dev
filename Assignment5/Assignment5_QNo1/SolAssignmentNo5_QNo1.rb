@@ -11,13 +11,15 @@ class ClassModuleInterface
   include ModuleSub
 
   # => call the common method
-  def self.call_common_method
+  def call_common_method
     puts "The addition from Module Add is = "
-    ModuleAdd.common_method
+    common_method
     puts "The subtraction from Module Sub is = "
-    ModuleSub.common_method
+    common_method
   end
 end
 
-#call the class method
-ClassModuleInterface.call_common_method
+#call the instance method
+ClassModuleInterface.new.call_common_method
+
+
