@@ -39,3 +39,4 @@ class CustomClass
 end
 
 CustomClass.new.custom_method
+

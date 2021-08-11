@@ -82,3 +82,4 @@ class UserClassSkeleton
   end
 end
 
+
