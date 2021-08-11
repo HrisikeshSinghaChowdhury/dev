@@ -16,7 +16,7 @@ class CustomClass
       puts "Enter the hash value"
       h_value = gets.chomp.to_i
       # => inserting into the hash
-      var_hash.store(h_key,h_value)
+      var_hash.store(h_key, h_value)
       puts "------------------"
       puts "Enter y/n to continue/exit"
       res = gets.chomp
@@ -27,7 +27,7 @@ class CustomClass
     puts "Before modification of Hash #{var_hash.to_h}"
 
     var_hash.each_pair do |k, v|
-      var_output_hash.store(v,k)
+      var_output_hash.store(v, k)
     end
     # => after modification of hash
     puts "After modification of Hash #{var_output_hash.to_h}"
@@ -36,9 +36,3 @@ end
 
 # => call the instance method
 CustomClass.new.hash_exchange_op
-
-
-
-
-
-
