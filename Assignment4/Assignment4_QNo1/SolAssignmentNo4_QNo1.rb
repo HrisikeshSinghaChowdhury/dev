@@ -5,7 +5,7 @@
 class CustomClass
   def hash_op
     # => create an empty hash
-    var_hash = Hash[]
+    var_hash = {}
     # => Enter the elements into hash
     res = "y"
 
@@ -26,8 +26,8 @@ class CustomClass
     # => print original hash
     puts "Before modification of Hash   #{var_hash.to_h}"
 
-    var_hash.each_pair do |k,v|
-      var_hash[k] = v * 2 if (v != "nil")
+    var_hash.each_pair do |k, v|
+      var_hash[k] = v * 2
     end
     # => after modification of hash
     puts "After modification of Hash   #{var_hash.to_h}"
@@ -36,6 +36,8 @@ end
 
 # => call the instance method
 CustomClass.new.hash_op
+
+
 
 
 

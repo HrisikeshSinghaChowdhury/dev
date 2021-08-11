@@ -4,7 +4,7 @@
 class CustomClass
   def hash_exchange_op
     # => create an empty hash
-    var_hash = Hash[]
+    var_hash = {}
     # => Enter the elements into hash
     res = "y"
 
@@ -26,7 +26,7 @@ class CustomClass
     # => print original hash
     puts "Before modification of Hash #{var_hash.to_h}"
 
-    var_hash.each_pair do |k,v|
+    var_hash.each_pair do |k, v|
       var_output_hash.store(v,k)
     end
     # => after modification of hash
