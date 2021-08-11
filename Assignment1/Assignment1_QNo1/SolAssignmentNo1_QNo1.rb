@@ -7,9 +7,9 @@ class CustomClass
   def cvt_str_to_int
     puts "Enter another string"
     str = gets.chomp
-    str_output = str.chomp.to_f
+    str_output = str.to_f
 
-    if (str.nil? && str_output.zero?)
+    if (str.nil? || str_output.zero?)
       puts "Something wrong"
     else
       puts "The required floating conversion is #{str_output}"
@@ -19,8 +19,3 @@ end
 
 # => create instance and call method
 CustomClass.new.cvt_str_to_int
-
-
-
-
-
