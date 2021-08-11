@@ -5,7 +5,9 @@
 class CustomClass
   def get_hash_op
     # => create an empty hash
-    var_hash = Hash[]
+    var_hash = {}
+    # => create an empty array
+    arr = []
     # => Enter the elements into hash
     res = "y"
 
@@ -17,23 +19,21 @@ class CustomClass
       puts "Enter the hash value"
       h_value = gets.chomp.to_i
       # => inserting into the hash
-      var_hash.store(h_key,h_value)
+      var_hash.store(h_key, h_value)
+      arr.push(var_hash)
+      var_hash = {}
       puts "------------------"
       puts "Enter y/n to continue/exit"
       res = gets.chomp
     end
 
-    # => print original hash
-    puts "Before modification of Hash #{var_hash.to_hash}"
-    arr = Array.new(var_hash.to_a)
     # => after modification of hash and storing them in array
-    puts "After modification of Hash and storing into array #{Hash[arr].flatten}"
+    puts "After modification of Hash and storing into array #{arr}"
   end
 end
 
 # => call the instance method
 CustomClass.new.get_hash_op
-
 
 
 

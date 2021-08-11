@@ -2,7 +2,7 @@
 class CustomClass
     def hash_add_op
     # => create an empty hash
-    var_hash = Hash[]
+    var_hash = {}
     # => Enter the elements into hash
     res = "y"
 
@@ -14,7 +14,7 @@ class CustomClass
       puts "Enter the hash value"
       h_value = gets.chomp.to_i
       # => inserting into the hash
-      var_hash.store(h_key,h_value)
+      var_hash.store(h_key, h_value)
       puts "------------------"
       puts "Enter y/n to continue/exit"
       res = gets.chomp
