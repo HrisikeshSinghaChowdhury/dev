@@ -20,12 +20,13 @@ class SuperChildSkeleton < SuperParentSkeleton
 
   def super_argument(num)
     # super with arguments
-    super(num)
+    super
     puts "Hii You chose option : Super with Arguments in Child Class"
-    end
+  end
 end
 
 # => Call the above SuperChildSkeleton class
 ob = SuperChildSkeleton.new
 ob.super_argument(9)
+
 
