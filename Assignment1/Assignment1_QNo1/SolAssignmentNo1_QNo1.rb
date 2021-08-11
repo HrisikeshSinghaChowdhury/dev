@@ -9,7 +9,7 @@ class CustomClass
     str = gets.chomp
     str_output = str.to_f
 
-    if (str.nil? || str_output.zero?)
+    if (str.nil?)
       puts "Something wrong"
     else
       puts "The required floating conversion is #{str_output}"
