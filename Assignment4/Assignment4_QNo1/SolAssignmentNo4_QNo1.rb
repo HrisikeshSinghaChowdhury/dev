@@ -36,10 +36,3 @@ end
 
 # => call the instance method
 CustomClass.new.hash_op
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> 14c917fca03147de0f2c0dd48150b3570be41411
