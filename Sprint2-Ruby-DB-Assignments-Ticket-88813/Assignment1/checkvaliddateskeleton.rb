@@ -12,7 +12,7 @@ class CheckValidDateSkeleton
       puts "#{dt_input} is not valid because #{e.message}.Program terminates here"
       Kernel.exit(0)
     ensure
-      puts "--------------"
+      puts "-------------"
     end
   end
 end
